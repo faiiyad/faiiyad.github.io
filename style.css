@@ -228,7 +228,7 @@ nav .right a span{
 
 .skills-sec{
     color: var(--text-color);
-    margin-bottom: 75px;
+    margin-bottom: 10px;
     padding: 0 50px;
     
     
@@ -294,13 +294,14 @@ nav .right a span{
 
 
 
-/*  contact section!!  */
+/*  footer section!!  */
 
 
 
 .footer{
-    padding-top: 20px;
+    padding-top: 10px;
     padding: 50px;
+    padding-bottom: 20px;
     text-align: center;
     font-style: italic;
     font-size: 10px;
