@@ -158,6 +158,98 @@ nav .right a span{
 }
 
 
+.proj-container {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+
+.project {
+    display: flex; 
+    flex-direction: row; 
+    width: 525px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border: 1px solid white;
+}
+
+
+
+/* .project img {
+    width: 150px;
+
+    height: auto;
+} */
+
+
+.project a:hover {
+    color: crimson;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+.proj-content{
+    flex: 1;
+    text-align: center;
+    padding: 16px;
+}
+
+
+.proj-content h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+
+.proj-content p {
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tool{
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: crimson;
+    color: white;
+}
+
+.tool:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid crimson;
+    transition: 0.9s;
+}
+
+
+.proj-links{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+
+}
 
 
 
@@ -370,6 +462,54 @@ nav .right a span{
         display: none;
     }
 
+    /* proj */
 
+    .project {
+    flex-direction: column;
+    width: 90%; /* use relative width for smaller screens */
+    margin: 10px auto; /* center it with margin auto */
+  }
 
+  .proj-content {
+    padding: 12px;
+    text-align: center;
+  }
+
+  .proj-content h3 {
+    font-size: 20px;
+  }
+
+  .proj-content p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .tools {
+    flex-wrap: wrap; /* allow tool buttons to wrap on small screens */
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .tool {
+    font-size: 14px;
+    padding: 4px 8px;
+    margin: 4px;
+  }
+
+  .proj-links {
+    flex-direction: column;
+    padding: 8px 0;
+    gap: 8px;
+  }
+
+  .project a {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .project a .text {
+    display: inline;
+  }
 }
+
+
