@@ -189,7 +189,7 @@ nav .right a span{
 
 
 .project a:hover {
-    color: crimson;
+    color: lightskyblue;
     text-decoration: underline;
     text-decoration-color: white;
 }
@@ -222,7 +222,7 @@ nav .right a span{
     flex-direction: row;
 }
 
-.tool{
+.tool-cs{
     border: 2px solid white;
     border-radius: 5px;
     margin-left: 0px;
@@ -234,10 +234,29 @@ nav .right a span{
     color: white;
 }
 
-.tool:hover{
+.tool-cs:hover{
     background-color: white;
     color: black;
     border: 2px solid crimson;
+    transition: 0.9s;
+}
+
+.tool-ngp{
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgb(17, 116, 4);
+    color: white;
+}
+
+.tool-ngp:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(17, 116, 4);
     transition: 0.9s;
 }
 
