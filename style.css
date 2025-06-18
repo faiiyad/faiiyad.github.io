@@ -459,6 +459,10 @@ nav .right a span{
     
 }
 
+.skills-sec:hover{
+    cursor: pointer;
+}
+
 .skills-sec h2{
     font-size: 25px;
     text-align: center;
@@ -512,16 +516,13 @@ nav .right a span{
     background-color: rgb(235, 86, 86);
 }
 .skills-sec .cells .cell:nth-child(2):hover{
-    background-color: rgb(48, 150, 238);
-}
-.skills-sec .cells .cell:nth-child(3):hover{
     background-color: #4584b6;
 }
-.skills-sec .cells .cell:nth-child(4):hover{
+.skills-sec .cells .cell:nth-child(3):hover{
     background-color: #ed8738;
 }
 
-.skills-sec .cells .cell:nth-child(5):hover{
+.skills-sec .cells .cell:nth-child(4):hover{
     background-color: #2965f1;
 }
 
