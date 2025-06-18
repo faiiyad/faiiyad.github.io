@@ -57,7 +57,11 @@ nav {
     padding: 0 50px;
     height: 80px;
     background-color: transparent;
-    transition: background-color 500ms;
+    /* transition: background-color 500ms; */
+    transition:
+        background-color 0.5s ease,
+        background-image 0.5s ease,
+        backdrop-filter 0.5s ease;
 }
 
 
@@ -72,9 +76,7 @@ nav.sticking {
     backdrop-filter: blur(20px);
     position: fixed;
     width: 100vw;
-    z-index: 9999;
-    transition: 0.5s;
-    
+    z-index: 9999;  
     
 }
 
@@ -206,8 +208,15 @@ nav .right a span{
 .filler{
     height: 20vh;
     width: auto;
+    transition: opacity 0.3s ease;
+    pointer-events: auto;
 }
 
+
+.filler.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 .texture{
     height: 100%;
