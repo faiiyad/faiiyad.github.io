@@ -183,6 +183,7 @@ nav .right a span{
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     font-size: 20px;
+    border-radius: 20px;
 }
 
 
@@ -334,14 +335,14 @@ nav .right a span{
     backdrop-filter: blur(20px); 
     color: white;
     cursor: pointer;
+    transition: 1s ease;
 }
 
 .tool-cs:hover{
     background-color: rgba(255, 255, 255, 0.048);
     backdrop-filter: blur(20px); 
     color: white;
-    
-    transition: 1s;
+    border-radius: 20px;
     
 }
 
@@ -357,14 +358,14 @@ nav .right a span{
     backdrop-filter: blur(20px); 
     color: white;
     cursor: pointer;
+    transition: 1s ease;
 }
 
 .tool-ngp:hover{
     background-color: rgba(255, 255, 255, 0.048);
     backdrop-filter: blur(20px); 
     color: white;
-    border: 2px solid rgb(17, 116, 4);
-    transition: 0.9s;
+    border-radius: 20px;
 }
 
 
@@ -385,6 +386,9 @@ nav .right a span{
 
 
 /* Experience section */
+
+
+
 .exp {
     padding: 50px;
     text-align: center;
@@ -393,6 +397,16 @@ nav .right a span{
 .exp h2 {
     font-size: 25px;
     
+}
+
+.content{
+    margin-top: 10px;
+}
+
+.job_img{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+
 }
 
 .card-container {
@@ -480,6 +494,14 @@ nav .right a span{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-sec .cells .row{
+    display: flex;
+    flex-direction: row;
 }
 
 
