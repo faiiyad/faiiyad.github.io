@@ -14,24 +14,28 @@
 
 html{
     scroll-behavior: smooth;
+
+    scroll-padding-top: 115px;
 }
 
 
 
 body{
     font-family: 'Rubik', sans-serif;
-    background-color: var(--background-color);
+    /* background-color:black; */
+    background-color: rgb(0, 11, 77);
+    
     color: var(--text-color);
     background-size: cover;
     background-image: linear-gradient(
-        hsla(243, 26%, 10%, 0.5),
-        hsla(243, 26%, 10%, 0.5)
-    ),
-    url("background.jpg");
+        hsla(0, 0%, 0%, 0.61),
+        hsla(243, 90%, 4%, 0.658)
+    );
+    /* background-color: black; */
 
 
     background-position: top left;
-    background-size: 300%;
+    
     line-height: 1.5;
     
 }
@@ -58,7 +62,18 @@ nav {
 
 
 nav.sticking {
-    background-color: rgb(50, 50, 50);
+    background-color: transparent;
+    background-image: linear-gradient(
+     120deg, 
+     rgba(255, 255, 255, 0.1),
+     rgba(0, 0, 0, 0.1),
+     rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+    transition: 0.5s;
     
     
 }
@@ -80,11 +95,36 @@ nav .right a span{
 
 /* hero section */
 .hero {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+
+
+
+
+
+
+
+.hero_ico_yellow{
+    color: #faeb2c;
+    
+}
+
+.hero_ico_pink{
+    color: #f52789;
+    
+}
+
+.hero_ico_blue{
+    color: #1685f8;
+    
+}
+
+.hero_ico_purple{
+    color: #e900ff;
 }
 
 .hero .text {
@@ -96,7 +136,7 @@ nav .right a span{
     justify-items: center;
     padding: 0 50px; 
     margin: 50px 0;
-    padding-bottom: 25vh;
+    padding-bottom: 10vh;
     text-align: center;
 }
 
@@ -119,8 +159,14 @@ nav .right a span{
 
 
 .hero .text .links a{
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);  
+    background-color: transparent;
+    background-image: linear-gradient(
+     120deg, 
+     rgba(255, 255, 255, 0.2),
+     rgba(0, 0, 0, 0.2),
+     rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(20px);
     color: var(--text-color);
     display: inline-block;
     padding: 5px 10px;
@@ -128,32 +174,54 @@ nav .right a span{
     border-radius: 4px;
     margin-left: 5px;
     margin-bottom: 10px;
-    transition: 0.85s;
+    transition: 0.8s;
+}
+
+.hero .text .links a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    font-size: 20px;
 }
 
 
-.hero .text .links a:nth-child(1):hover {
-    background-color: rgb(88, 88, 231);
-    color: var(--text-color);
+/* .hero .text .links a:hover .fa-solid{
+    color: white;
+    transition: 0.8s;
+} */
+
+.hero .text .links a:nth-child(1):hover{
+  border-color: #faeb2c;
+}
+.hero .text .links a:nth-child(2):hover{
+  border-color: #1685f8;
+}
+.hero .text .links a:nth-child(3):hover{
+  border-color: #f52789;
+}
+.hero .text .links a:nth-child(4):hover{
+  border-color: #e900ff;
 }
 
-.hero .text .links a:nth-child(2):hover {
-    background-color: rgb(2, 142, 9);
-    color: var(--text-color);
-}
 
-.hero .text .links a:nth-child(3):hover {
-    background-color: rgb(189, 148, 51);
-    color: var(--text-color);
-}
-
-.hero .text .links a:nth-child(4):hover {
-    background-color: rgb(143, 51, 189);
-    color: var(--text-color);
+.filler{
+    height: 20vh;
+    width: auto;
 }
 
 
-
+.texture{
+    height: 100%;
+    width: auto;
+    background-color: transparent;
+    background-image: linear-gradient(
+     120deg, 
+     rgba(255, 255, 255, 0.2),
+     rgba(20, 20, 20, 0.2),
+     rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(20px);
+    /* background-size: 30px; */
+}
 
 
 /* Projects Section */
@@ -187,8 +255,14 @@ nav .right a span{
     display: flex; 
     flex-direction: row; 
     width: 525px;
-    background-color: rgba(255, 255, 255, 0.048);
-    backdrop-filter: blur(20px); 
+    background-color: transparent;
+    background-image: linear-gradient(
+     120deg, 
+     rgba(255, 255, 255, 0.1),
+     rgba(0, 0, 0, 0.1),
+     rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(20px);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -257,8 +331,9 @@ nav .right a span{
     background-color: rgba(255, 255, 255, 0.048);
     backdrop-filter: blur(20px); 
     color: white;
-    border: 2px solid crimson;
-    transition: 0.9s;
+    
+    transition: 1s;
+    
 }
 
 .tool-ngp{
@@ -322,8 +397,14 @@ nav .right a span{
 
 .card{
     width: 325px;
-    background-color: rgba(255, 255, 255, 0.048);
-    backdrop-filter: blur(20px); 
+    background-color: transparent;
+    background-image: linear-gradient(
+     120deg, 
+     rgba(255, 255, 255, 0.1),
+     rgba(0, 0, 0, 0.1),
+     rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(20px);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0,2);
@@ -400,6 +481,14 @@ nav .right a span{
     border-radius: 5px;
     margin: 5px;
     transition: 0.9s;
+    background-color: transparent;
+    background-image: linear-gradient(
+     120deg, 
+     rgba(255, 255, 255, 0.1),
+     rgba(0, 0, 0, 0.1),
+     rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(20px);
 
 }
 
