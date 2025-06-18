@@ -22,7 +22,20 @@ body{
     font-family: 'Rubik', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    background-size: cover;
+    background-image: linear-gradient(
+        hsla(243, 26%, 10%, 0.5),
+        hsla(243, 26%, 10%, 0.5)
+    ),
+    url("background.jpg");
+
+
+    background-position: top left;
+    background-size: 300%;
+    line-height: 1.5;
+    
 }
+
 
 
 a {
@@ -39,7 +52,7 @@ nav {
     align-items: center;
     padding: 0 50px;
     height: 80px;
-    background-color: var(--background-color);
+    background-color: transparent;
     transition: background-color 500ms;
 }
 
@@ -101,10 +114,13 @@ nav .right a span{
     margin-top: 25px;
     /* display: flex; */
     /* justify-content: center; */
+    
 }
 
 
 .hero .text .links a{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);  
     color: var(--text-color);
     display: inline-block;
     padding: 5px 10px;
@@ -161,7 +177,7 @@ nav .right a span{
 .proj-container {
     display: flex;
     justify-content: center;
-
+     
     flex-wrap: wrap;
     margin-top: 10px;
 }
@@ -171,7 +187,8 @@ nav .right a span{
     display: flex; 
     flex-direction: row; 
     width: 525px;
-    background-color: var(--background-color);
+    background-color: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(20px); 
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -230,13 +247,16 @@ nav .right a span{
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px;
-    background-color: crimson;
+    background-color: rgba(220, 20, 60, 0.767);
+    backdrop-filter: blur(20px); 
     color: white;
+    cursor: pointer;
 }
 
 .tool-cs:hover{
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(20px); 
+    color: white;
     border: 2px solid crimson;
     transition: 0.9s;
 }
@@ -249,13 +269,16 @@ nav .right a span{
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px;
-    background-color: rgb(17, 116, 4);
+    background-color: rgba(17, 116, 4, 0.767);
+    backdrop-filter: blur(20px); 
     color: white;
+    cursor: pointer;
 }
 
 .tool-ngp:hover{
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(20px); 
+    color: white;
     border: 2px solid rgb(17, 116, 4);
     transition: 0.9s;
 }
@@ -299,7 +322,8 @@ nav .right a span{
 
 .card{
     width: 325px;
-    background-color: var(--background-color);
+    background-color: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(20px); 
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0,2);
