@@ -118,7 +118,10 @@ nav .right a:hover {
     transition: 0.9s ease;
     cursor: url('/images/new.cur'), auto;
 }
-
+.ico-res.hovered_i{
+    transition: 1.2s;
+    cursor: url('/images/new.cur'), auto;
+}
 .ico-git:hover{
     color: #2dba4e;
 }
@@ -127,8 +130,8 @@ nav .right a:hover {
     color: #0072b1;
 }
 
-.ico-res:hover{
-    color:#f52789;
+.ico-res:hover, .ico-res.hovered_i{
+    color:#35b847;
 }
 
 /* hero section */
@@ -141,7 +144,81 @@ nav .right a:hover {
 }
 
 
+.job{
+    border: 2px solid white;
+    position: relative;
+    border-radius: 5px;
+    font-size: small;
+    background-color: transparent;
+    background-image: linear-gradient(
+     120deg, 
+     rgba(255, 255, 255, 0.2),
+     rgba(0, 0, 0, 0.2),
+     rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
+    color: var(--text-color);
+    display: inline-block;
+    padding: 5px;
+    /* border-radius: 4px; */
+    margin-top: 5px;
+    transition: 1.2s;
+    cursor: url('/images/new.cur'), auto;
+}
 
+.job:hover, .hovered_j{
+    border: 2px solid #0a6917;
+    /* background-color: rgba(36, 231, 10, 0.171); */
+    background-image: linear-gradient(
+     120deg, 
+     rgba(16, 190, 10, 0.2),
+     rgba(46, 236, 8, 0.2),
+     rgba(8, 255, 28, 0.2)
+    );
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.gradient-text-green {
+  background: linear-gradient(90deg, #35b847, #07bd10, #32e90d );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.gradient-text-metal {
+    font-size: 32px;
+  background: linear-gradient(
+     90deg,
+     rgb(197, 197, 212),
+     rgb(255, 255, 255),
+     rgb(212, 212, 219),
+     rgb(255, 255, 255),
+     rgb(188, 188, 202)
+    );;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+
+
+
+.job-text{
+    color: #35b847;
+    transition: 1.2s;
+    font-size: 12px;
+}
+
+.job:hover .job-text{
+    color:white;
+    font-size: 15px;
+}
 
 
 
@@ -680,6 +757,12 @@ nav .right a:hover {
     .hero .text .links a span{
         display: none;
     }
+
+    .job:hover{
+    border: 2px solid lime;
+    border-radius: 20px;
+    font-size: 11px;
+}
 
 
     /* exp */

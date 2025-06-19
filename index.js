@@ -36,3 +36,22 @@ const fillerObserver = new IntersectionObserver(
 );
 
 fillerObserver.observe(fillerWatcher);
+
+
+const jobs_tags = document.querySelectorAll('.job');
+const ico_j = document.querySelectorAll('.ico-res');
+const jobs = [...jobs_tags, ...ico_j];
+
+  jobs.forEach(job => {
+    job.addEventListener('mouseenter', () => {
+      jobs_tags.forEach(j => j.classList.add('hovered_j'));
+      ico_j.forEach(j => j.classList.add('hovered_i'));
+      console.log("added")
+    });
+    job.addEventListener('mouseleave', () => {
+      jobs_tags.forEach(j => j.classList.remove('hovered_j'));
+      ico_j.forEach(j => j.classList.remove('hovered_i'));
+
+      console.log("removed hovered")
+    });
+  });
