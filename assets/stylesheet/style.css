@@ -475,9 +475,9 @@ nav .right a:hover {
     
 }
 
-.tool.ngp{
+.tool.cg{
     
-    background-color: rgba(17, 116, 4, 0.767);
+    background-color: rgba(0, 140, 255, 0.76);
     
 }
 
@@ -679,6 +679,10 @@ nav .right a:hover {
     color: black;
 }
 
+.skills-sec .cells .react:hover {
+    background-color: rgb(0, 162, 255);
+}
+
 .skills-sec .cells .sklearn:hover {
     background-color: rgb(248, 154, 54); /* Scikit-learn */
 }
@@ -713,6 +717,10 @@ nav .right a:hover {
 
 .skills-sec .cells .tkinter:hover {
     background-color: rgb(147, 112, 219); /* Tkinter (Light Purple) */
+}
+
+.skills-sec .cells .mongodb:hover {
+    background-color: rgb(0, 146, 44); /* Tkinter (Light Purple) */
 }
 
 .skills-sec .cells .vscode:hover {
